@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 spec.name = 'LoggingKit'
 spec.platform = :ios, '9.0'
 spec.ios.deployment_target = '9.0'
-spec.version = '1.0.8'
+spec.version = '1.0.9'
 spec.authors = { 'Andreatta Massimiliano' => 'massimiliano.andreatta@gmail.com' }
 spec.homepage = 'https://github.com/Metide/LoggingKit'
 spec.summary = 'A Swift wrapper for Logging'
