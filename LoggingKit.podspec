@@ -9,19 +9,7 @@ spec.summary = 'A Swift wrapper for Logging'
 spec.license = { :type => 'MIT' }
 spec.source = { :git => 'https://github.com/Metide/LoggingKit.git', :tag => "#{spec.version}" }
 spec.framework = 'UIKit', 'Foundation', 'CoreTelephony'
-spec.source_files = "LoggingKit/*.swift"
-spec.subspec 'Extentions' do |ss|
-ss.source_files = '*.swift'
-end
-spec.subspec 'Model' do |ss|
-ss.source_files = '*.swift'
-end
-spec.subspec 'Service' do |ss|
-ss.source_files = '*.swift'
-end
-spec.subspec 'Utility' do |ss|
-ss.source_files = '*.swift'
-end
+spec.source_files = 'LoggingKit/**/*.swift'
 spec.dependency 'Alamofire', '4.4.0'
 spec.dependency 'RxSwift', '3.4.1'
 spec.dependency 'KeychainSwift', '8.0.2'
