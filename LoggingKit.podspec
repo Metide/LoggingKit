@@ -15,4 +15,5 @@ Pod::Spec.new do |spec|
   spec.dependency 'RxSwift', '3.4.1'
   spec.dependency 'KeychainSwift', '8.0.2'
   spec.dependency 'SwiftyJSON', '3.1.4'
+  spec.dependency 'KSCrash'
 end
