@@ -20,7 +20,6 @@ public class LKLogging: NSObject {
     internal var apiManager:LKManagerRestApi?
     internal var config:LKConfigLogging?
     internal var persistanceManager:LKManagerPersistence = LKManagerPersistence()
-    internal var networkType:String = ""
     
     // MARK: Shared Instance
     public class func sharedInstance() -> LKLogging {
@@ -45,8 +44,6 @@ public class LKLogging: NSObject {
         
         //Init API Manager
         self.apiManager = LKManagerRestApi.init(domainURL: (self.config?.domainURL)!, authToken: (self.config?.authToken)!)
-        self.setNetworkType(networkType: self.networkType)
-        
         
         if self.persistanceManager.diffSecondOfLastUpdate() >= Int((self.config?.timeoutSync)!)
         {
@@ -65,12 +62,6 @@ public class LKLogging: NSObject {
         
         self.config?.authToken = authToken
         self.apiManager?.setAuthToken(authToken:authToken)
-    }
-    
-    public func setNetworkType(networkType:String) {
-        
-        self.networkType = networkType
-        self.apiManager?.setNetworkType(networkType: self.networkType)
     }
     
     internal func update(isCallFunction:Bool = false) {

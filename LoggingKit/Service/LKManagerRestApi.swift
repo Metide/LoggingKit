@@ -23,7 +23,6 @@ public class LKManagerRestApi {
     //MARK: Variables
     private(set) var domainURL:String = ""
     private(set) var authToken:String = ""
-    private(set) var networkType:String = ""
     
     var timeoutRequest:Double = 60
     {
@@ -77,8 +76,9 @@ public class LKManagerRestApi {
                 headers["X-TPay-GPS-Error"] = ""
             }
             
-            headers["X-TPay-Connection-Type"] = ""
-            headers["X-TPay-Mobile-Network-Type"] = ""
+            headers["X-TPay-Connection-Type"] = UIDevice().networkType
+            headers["X-TPay-Mobile-Network-Type"] = UIDevice().carrierName
+            
             headers["X-TPay-App-Millis"] = "\(Date().timeIntervalSince1970)"
             
             complete(headers)
@@ -89,11 +89,6 @@ public class LKManagerRestApi {
     public func setAuthToken(authToken:String)
     {
         self.authToken = authToken
-    }
-    
-    public func setNetworkType(networkType:String)
-    {
-        self.networkType = networkType
     }
     
     public func sendHardwareProfile(device:LKModelDevice, onSuccess:@escaping(Bool) -> Void, onFailure:@escaping(Error) -> Void){

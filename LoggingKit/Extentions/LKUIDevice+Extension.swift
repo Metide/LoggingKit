@@ -13,8 +13,7 @@ import CoreTelephony
 
 extension UIDevice {
     
-    
-    func getCarrierName() -> String
+    var carrierName: String
     {
         let networkInfo = CTTelephonyNetworkInfo()
         let carrier = networkInfo.subscriberCellularProvider
@@ -25,40 +24,13 @@ extension UIDevice {
         return carrierName ?? ""
     }
     
-    /*
-    func getNetworkType()->String {
-        do{
-            let reachability:Reachability = try Reachability.reachabilityForInternetConnection()
-            do{
-                try reachability.startNotifier()
-                let status = reachability.currentReachabilityStatus
-                if(status == .NotReachable){
-                    return ""
-                }else if (status == .ReachableViaWiFi){
-                    return "Wifi"
-                }else if (status == .ReachableViaWWAN){
-                    let networkInfo = CTTelephonyNetworkInfo()
-                    let carrierType = networkInfo.currentRadioAccessTechnology
-                    switch carrierType{
-                    case CTRadioAccessTechnologyGPRS?,CTRadioAccessTechnologyEdge?,CTRadioAccessTechnologyCDMA1x?: return "2G"
-                    case CTRadioAccessTechnologyWCDMA?,CTRadioAccessTechnologyHSDPA?,CTRadioAccessTechnologyHSUPA?,CTRadioAccessTechnologyCDMAEVDORev0?,CTRadioAccessTechnologyCDMAEVDORevA?,CTRadioAccessTechnologyCDMAEVDORevB?,CTRadioAccessTechnologyeHRPD?: return "3G"
-                    case CTRadioAccessTechnologyLTE?: return "4G"
-                    default: return ""
-                    }
-                    
-                    
-                }else{
-                    return ""
-                }
-            }catch{
-                return ""
-            }
-            
-        }catch{
-            return ""
-        }
+    var networkType: String {
+        
+        let telephonyInfo:CTTelephonyNetworkInfo = CTTelephonyNetworkInfo()
+        
+        return telephonyInfo.currentRadioAccessTechnology ?? ""
+        
     }
- */
     
     var modelName: String {
         var systemInfo = utsname()
