@@ -2,14 +2,14 @@ Pod::Spec.new do |spec|
 spec.name = 'LoggingKit'
 spec.platform = :ios, '9.0'
 spec.ios.deployment_target = '9.0'
-spec.version = '1.0.9'
+spec.version = '1.0.10'
 spec.authors = { 'Andreatta Massimiliano' => 'massimiliano.andreatta@gmail.com' }
 spec.homepage = 'https://github.com/Metide/LoggingKit'
 spec.summary = 'A Swift wrapper for Logging'
 spec.license = { :type => 'MIT' }
 spec.source = { :git => 'https://github.com/Metide/LoggingKit.git', :tag => "#{spec.version}" }
 spec.framework = 'UIKit', 'Foundation', 'CoreTelephony'
-spec.source_files = 'LoggingKit/**/*.swift'
+spec.source_files = 'LoggingKit/*.swift'
 
 spec.subspec 'Extentions' do |extentions|
     extentions.source_files = 'LoggingKit/Extentions/**/*.swift'
