@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.framework = 'UIKit', 'Foundation', 'CoreTelephony'
 
   spec.dependency 'Alamofire', '4.4.0'
-  spec.dependency 'RxSwift'
-  spec.dependency 'KeychainSwift'
+  spec.dependency 'RxSwift', '3.4.1'
+  spec.dependency 'KeychainSwift', '8.0.2'
   spec.dependency 'SwiftyJSON', '3.1.4'
 end
