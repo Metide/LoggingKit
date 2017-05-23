@@ -14,17 +14,14 @@ spec.source_files = 'LoggingKit/**/*.swift'
 spec.subspec 'Extentions' do |extentions|
     extentions.source_files = 'LoggingKit/Extentions/**/*.swift'
 end
-
 spec.subspec 'Models' do |models|
     models.source_files = 'LoggingKit/Models/**/*.swift'
 end
-
 spec.subspec 'Service' do |service|
     service.source_files = 'LoggingKit/Service/**/*.swift'
 end
-
 spec.subspec 'Utility' do |utility|
-    extentions.source_files = 'LoggingKit/Utility/**/*.swift'
+    utility.source_files = 'LoggingKit/Utility/**/*.swift'
 end
 
 spec.dependency 'Alamofire', '4.4.0'
