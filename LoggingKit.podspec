@@ -9,8 +9,7 @@ Pod::Spec.new do |spec|
   spec.license = { :type => 'MIT' }
   spec.source = { :git => 'https://github.com/Metide/LoggingKit.git', :tag => "#{spec.version}" }
   spec.framework = 'UIKit', 'Foundation', 'CoreTelephony'
-  spec.source_files = "LoggingKit/*.swift"
-  spec.preserve_paths = 'Extentions/*.swift', 'Model/*.swift', 'Service/*.swift', 'Utility/*.swift'
+  spec.source_files = "LoggingKit/*.swift", 'Extentions/*.swift', 'Model/*.swift', 'Service/*.swift', 'Utility/*.swift'
   spec.dependency 'Alamofire', '4.4.0'
   spec.dependency 'RxSwift', '3.4.1'
   spec.dependency 'KeychainSwift', '8.0.2'
