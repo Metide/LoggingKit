@@ -9,22 +9,18 @@
 /* Begin PBXBuildFile section */
 		2BA0A8281ED4BF6C0052CCDC /* LKUIDevice+Extension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE25E1ED1C504006C7DAD /* LKUIDevice+Extension.swift */; settings = {ATTRIBUTES = (Private, ); }; };
 		2BA0A8291ED4BF6C0052CCDC /* LKDate+Extentions.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE28D1ED4919E006C7DAD /* LKDate+Extentions.swift */; settings = {ATTRIBUTES = (Private, ); }; };
-		2BA0A82A1ED4BF6C0052CCDC /* LKModelAction.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE24D1ED1C4FA006C7DAD /* LKModelAction.swift */; settings = {ATTRIBUTES = (Private, ); }; };
-		2BA0A82B1ED4BF6C0052CCDC /* LKModelConfigLogging.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE24E1ED1C4FA006C7DAD /* LKModelConfigLogging.swift */; settings = {ATTRIBUTES = (Private, ); }; };
-		2BA0A82C1ED4BF6C0052CCDC /* LKModelDevice.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE24F1ED1C4FA006C7DAD /* LKModelDevice.swift */; settings = {ATTRIBUTES = (Private, ); }; };
-		2BA0A82D1ED4BF6C0052CCDC /* LKModelError.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE2501ED1C4FA006C7DAD /* LKModelError.swift */; settings = {ATTRIBUTES = (Private, ); }; };
 		2BA0A82E1ED4BF6C0052CCDC /* LKManagerKeychain.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE2521ED1C4FA006C7DAD /* LKManagerKeychain.swift */; settings = {ATTRIBUTES = (Private, ); }; };
 		2BA0A82F1ED4BF6C0052CCDC /* LKManagerRestApi.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE2531ED1C4FA006C7DAD /* LKManagerRestApi.swift */; settings = {ATTRIBUTES = (Private, ); }; };
 		2BA0A8301ED4BF6C0052CCDC /* LKManagerPersistence.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE27B1ED2E92C006C7DAD /* LKManagerPersistence.swift */; settings = {ATTRIBUTES = (Private, ); }; };
 		2BA0A8311ED4BF6C0052CCDC /* LKManagerCoreLocation.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE27D1ED4288A006C7DAD /* LKManagerCoreLocation.swift */; settings = {ATTRIBUTES = (Private, ); }; };
 		2BA0A8321ED4BF6C0052CCDC /* LKFunctions.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE2551ED1C4FA006C7DAD /* LKFunctions.swift */; settings = {ATTRIBUTES = (Private, ); }; };
 		2BA0A8331ED4BF7B0052CCDC /* LKLogging.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE24A1ED1C4F1006C7DAD /* LKLogging.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BA0A8441ED4D4650052CCDC /* LKModelAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0A8401ED4D4650052CCDC /* LKModelAction.swift */; };
+		2BA0A8451ED4D4650052CCDC /* LKModelConfigLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0A8411ED4D4650052CCDC /* LKModelConfigLogging.swift */; };
+		2BA0A8461ED4D4650052CCDC /* LKModelDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0A8421ED4D4650052CCDC /* LKModelDevice.swift */; };
+		2BA0A8471ED4D4650052CCDC /* LKModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0A8431ED4D4650052CCDC /* LKModelError.swift */; };
 		2BEDE21C1ED1C252006C7DAD /* LoggingKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BEDE21A1ED1C252006C7DAD /* LoggingKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BEDE24B1ED1C4F1006C7DAD /* LKLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDE24A1ED1C4F1006C7DAD /* LKLogging.swift */; };
-		2BEDE2561ED1C4FA006C7DAD /* LKModelAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDE24D1ED1C4FA006C7DAD /* LKModelAction.swift */; };
-		2BEDE2571ED1C4FA006C7DAD /* LKModelConfigLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDE24E1ED1C4FA006C7DAD /* LKModelConfigLogging.swift */; };
-		2BEDE2581ED1C4FA006C7DAD /* LKModelDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDE24F1ED1C4FA006C7DAD /* LKModelDevice.swift */; };
-		2BEDE2591ED1C4FA006C7DAD /* LKModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDE2501ED1C4FA006C7DAD /* LKModelError.swift */; };
 		2BEDE25A1ED1C4FA006C7DAD /* LKManagerKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDE2521ED1C4FA006C7DAD /* LKManagerKeychain.swift */; };
 		2BEDE25B1ED1C4FA006C7DAD /* LKManagerRestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDE2531ED1C4FA006C7DAD /* LKManagerRestApi.swift */; };
 		2BEDE25C1ED1C4FA006C7DAD /* LKFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDE2551ED1C4FA006C7DAD /* LKFunctions.swift */; };
@@ -37,14 +33,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BA0A8401ED4D4650052CCDC /* LKModelAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKModelAction.swift; sourceTree = "<group>"; };
+		2BA0A8411ED4D4650052CCDC /* LKModelConfigLogging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKModelConfigLogging.swift; sourceTree = "<group>"; };
+		2BA0A8421ED4D4650052CCDC /* LKModelDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKModelDevice.swift; sourceTree = "<group>"; };
+		2BA0A8431ED4D4650052CCDC /* LKModelError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKModelError.swift; sourceTree = "<group>"; };
 		2BEDE2171ED1C252006C7DAD /* LoggingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoggingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEDE21A1ED1C252006C7DAD /* LoggingKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggingKit.h; sourceTree = "<group>"; };
 		2BEDE21B1ED1C252006C7DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BEDE24A1ED1C4F1006C7DAD /* LKLogging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKLogging.swift; sourceTree = "<group>"; };
-		2BEDE24D1ED1C4FA006C7DAD /* LKModelAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKModelAction.swift; sourceTree = "<group>"; };
-		2BEDE24E1ED1C4FA006C7DAD /* LKModelConfigLogging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKModelConfigLogging.swift; sourceTree = "<group>"; };
-		2BEDE24F1ED1C4FA006C7DAD /* LKModelDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKModelDevice.swift; sourceTree = "<group>"; };
-		2BEDE2501ED1C4FA006C7DAD /* LKModelError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKModelError.swift; sourceTree = "<group>"; };
 		2BEDE2521ED1C4FA006C7DAD /* LKManagerKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKManagerKeychain.swift; sourceTree = "<group>"; };
 		2BEDE2531ED1C4FA006C7DAD /* LKManagerRestApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKManagerRestApi.swift; sourceTree = "<group>"; };
 		2BEDE2551ED1C4FA006C7DAD /* LKFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKFunctions.swift; sourceTree = "<group>"; };
@@ -84,6 +80,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2BA0A83F1ED4D4650052CCDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BA0A8401ED4D4650052CCDC /* LKModelAction.swift */,
+				2BA0A8411ED4D4650052CCDC /* LKModelConfigLogging.swift */,
+				2BA0A8421ED4D4650052CCDC /* LKModelDevice.swift */,
+				2BA0A8431ED4D4650052CCDC /* LKModelError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2BEDE20D1ED1C252006C7DAD = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +112,8 @@
 		2BEDE2191ED1C252006C7DAD /* LoggingKit */ = {
 			isa = PBXGroup;
 			children = (
+				2BA0A83F1ED4D4650052CCDC /* Models */,
 				2BEDE25D1ED1C504006C7DAD /* Extentions */,
-				2BEDE24C1ED1C4FA006C7DAD /* Model */,
 				2BEDE2511ED1C4FA006C7DAD /* Service */,
 				2BEDE2541ED1C4FA006C7DAD /* Utility */,
 				2BEDE24A1ED1C4F1006C7DAD /* LKLogging.swift */,
@@ -114,17 +121,6 @@
 				2BEDE21B1ED1C252006C7DAD /* Info.plist */,
 			);
 			path = LoggingKit;
-			sourceTree = "<group>";
-		};
-		2BEDE24C1ED1C4FA006C7DAD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2BEDE24D1ED1C4FA006C7DAD /* LKModelAction.swift */,
-				2BEDE24E1ED1C4FA006C7DAD /* LKModelConfigLogging.swift */,
-				2BEDE24F1ED1C4FA006C7DAD /* LKModelDevice.swift */,
-				2BEDE2501ED1C4FA006C7DAD /* LKModelError.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		2BEDE2511ED1C4FA006C7DAD /* Service */ = {
@@ -179,10 +175,6 @@
 				2BA0A8331ED4BF7B0052CCDC /* LKLogging.swift in Headers */,
 				2BA0A8281ED4BF6C0052CCDC /* LKUIDevice+Extension.swift in Headers */,
 				2BA0A8291ED4BF6C0052CCDC /* LKDate+Extentions.swift in Headers */,
-				2BA0A82A1ED4BF6C0052CCDC /* LKModelAction.swift in Headers */,
-				2BA0A82B1ED4BF6C0052CCDC /* LKModelConfigLogging.swift in Headers */,
-				2BA0A82C1ED4BF6C0052CCDC /* LKModelDevice.swift in Headers */,
-				2BA0A82D1ED4BF6C0052CCDC /* LKModelError.swift in Headers */,
 				2BA0A82E1ED4BF6C0052CCDC /* LKManagerKeychain.swift in Headers */,
 				2BA0A82F1ED4BF6C0052CCDC /* LKManagerRestApi.swift in Headers */,
 				2BA0A8301ED4BF6C0052CCDC /* LKManagerPersistence.swift in Headers */,
@@ -296,17 +288,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BEDE2571ED1C4FA006C7DAD /* LKModelConfigLogging.swift in Sources */,
 				2BEDE27E1ED4288A006C7DAD /* LKManagerCoreLocation.swift in Sources */,
-				2BEDE2561ED1C4FA006C7DAD /* LKModelAction.swift in Sources */,
-				2BEDE2591ED1C4FA006C7DAD /* LKModelError.swift in Sources */,
-				2BEDE2581ED1C4FA006C7DAD /* LKModelDevice.swift in Sources */,
+				2BA0A8441ED4D4650052CCDC /* LKModelAction.swift in Sources */,
 				2BEDE27C1ED2E92C006C7DAD /* LKManagerPersistence.swift in Sources */,
+				2BA0A8471ED4D4650052CCDC /* LKModelError.swift in Sources */,
 				2BEDE25C1ED1C4FA006C7DAD /* LKFunctions.swift in Sources */,
 				2BEDE25A1ED1C4FA006C7DAD /* LKManagerKeychain.swift in Sources */,
 				2BEDE24B1ED1C4F1006C7DAD /* LKLogging.swift in Sources */,
+				2BA0A8451ED4D4650052CCDC /* LKModelConfigLogging.swift in Sources */,
 				2BEDE2601ED1C504006C7DAD /* LKUIDevice+Extension.swift in Sources */,
 				2BEDE25B1ED1C4FA006C7DAD /* LKManagerRestApi.swift in Sources */,
+				2BA0A8461ED4D4650052CCDC /* LKModelDevice.swift in Sources */,
 				2BEDE28E1ED4919E006C7DAD /* LKDate+Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
