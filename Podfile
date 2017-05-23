@@ -11,5 +11,6 @@ target 'LoggingKit' do
   pod 'KeychainSwift'
   pod 'SwiftyJSON', '3.1.4'
   pod 'RxSwift'
-
+  pod 'KSCrash'
+  
 end

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>KSCrash.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>KeychainSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,22 +42,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>44AA37839FF5CF5CD24F13387653B9E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5EA22DDD2E81E82D6BD0C661025DA794</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>944BA7F9348D6219FDF5CA738351458F</key>
+		<key>9345CC47049EA982261E63A877AC1C0C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC34651AD81EC3AC11BA4869206D96DD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EC93C8FB6158E8AED9EC738E75E8FDD8</key>
+		<key>D5657BD8F7F2A04C4132EB41B59BA587</key>
 		<dict>
 			<key>primary</key>
 			<true/>

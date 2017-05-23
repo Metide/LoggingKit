@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import KSCrash
 
 /// Log Manager
 public class LKLogging: NSObject {
@@ -14,7 +15,7 @@ public class LKLogging: NSObject {
     // MARK: Static Variables
     internal static var instance: LKLogging?
     
-    //internal let instanceCrashLibrary = KSCrash.sharedInstance()
+    internal let instanceCrashLibrary = KSCrash.sharedInstance()
     
     internal var timerSync:Timer?
     internal var apiManager:LKManagerRestApi?
@@ -32,6 +33,8 @@ public class LKLogging: NSObject {
     override init() {
         
         super.init()
+        
+        self.installCrashHandler()
     }
     
     
@@ -139,23 +142,56 @@ public class LKLogging: NSObject {
     
     // MARK: Action
     public func addError(error:LKModelError) {
+        debugLog(object: error)
         self.persistanceManager.saveError(errors: [error])
         self.update(isCallFunction: true)
     }
     
     public func addAction(action:LKModelAction) {
+        debugLog(object: action)
         self.persistanceManager.saveActions(actions: [action])
         self.update(isCallFunction: true)
     }
 }
 
-/*
-extension LKLogging: CrashEyeDelegate {
-    public func crashEyeDidCatchCrash(with model: CrashModel) {
-        debugLog(object: model)
+extension LKLogging
+{
+    // MARK: Init KSCrash
+    internal func installCrashHandler() {
         
-        let error:LKModelError = LKModelError.init(timestamp: Date(), type: LKTypeError.Fatal, objClass: "", line: 0, desc: model.callStack, category: "")
-        self.addError(error: error)
+        self.instanceCrashLibrary?.addConsoleLogToReport = true
+        self.instanceCrashLibrary?.printPreviousLog = false
+        self.instanceCrashLibrary?.catchZombies = true
+        
+        self.instanceCrashLibrary?.onCrash = { (report)  in
+            
+            
+        }
+        
+        self.instanceCrashLibrary?.install()
+        
+        print("reportCount -> \(self.instanceCrashLibrary?.reportCount ?? 0)")
+        
+        self.instanceCrashLibrary?.sendAllReports(completion: { (report, isComplete, error) in
+            
+            /*
+             report?.forEach({ (report) in
+             
+             //let error:LKErrorModel = LKErrorModel
+             
+             let reportDictionary:Dictionary<String, AnyObject> = (report as! Dictionary)
+             
+             if let crash:Dictionary<String, AnyObject> = reportDictionary["crash"] as? Dictionary
+             {
+             //let threads:Array<Dictionary<String, AnyObject>> = (crash["threads"] as? Array<Dictionary<String, AnyObject>>)!
+             //print("thread -> \(threads[0]["contents"])")
+             }
+             
+             })
+             
+             */
+            
+        })
     }
+    
 }
- */
